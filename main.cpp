@@ -8,7 +8,7 @@ int main()
 
 	IplImage* in;
 	IplImage* gray;
-	in = cvLoadImage("E:\\上海中医药大学合作项目\\projects\\舌像特征提取\\裂纹\\data\\22.jpg",CV_LOAD_IMAGE_COLOR);
+	in = cvLoadImage(".\\data\\22.jpg",CV_LOAD_IMAGE_COLOR);
 	gray = cvCreateImage(cvGetSize(in),8,1);
 	cvCvtColor(in,gray,CV_BGR2GRAY);
 	cvShowImage("in",gray);
